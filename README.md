@@ -11,3 +11,5 @@ This is useful to check if there are same files (with different name )
 ### file_folder_count.py
 Function to get the count of files or folders in a given path
 
+### read_file.py
+Reads a file, splits based on the newline and converts into a list
