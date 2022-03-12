@@ -53,20 +53,3 @@ df_classes = pd.DataFrame.from_dict(d,orient='index')
 df_classes.to_csv(CLASSES_TXT,header=False)
 
 
-# ------------ Pickling ----------
-
-# #pickle the reverse dictionary object to a file
-# pkl_out=open("../report/plk_class_enum.pkl","wb")
-# pickle.dump(d,pkl_out)
-# pkl_out.close()
-
-
-# --- Unpickling code to go in inference file
-
-# #Read back the pickle file 
-# import pickle# open the file for reading
-# pkl_in = open("../data/plk_class_dict.pkl", "rb")# load the object from the file into var a
-# dict_unpickled = pickle.load(pkl_in)
-# dict_class_inv= {v: k for k, v in d_unpickled.items())
-
-
