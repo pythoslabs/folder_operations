@@ -1,0 +1,12 @@
+# Creates a set of folders in the list if they donot already exist
+INPUT_FOLDER = '../input'
+OUTPUT_FOLDER = '../output'
+
+L_folders =  [INPUT_FOLDER,OUTPUT_FOLDER]
+
+def create_folders(L_folders):
+    for folder_ in L_folders : 
+        if not os.path.isdir(f'{folder_}'):
+            print(f'creating ... {folder_}')
+            os.mkdir(f'{folder_}')
+            
